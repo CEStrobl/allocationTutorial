@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RAM Allocation Tutorial</title>
+</head>
+
+<body>
+
+<div class="hero">
+  <div class="text">
+    <h1>MC Modded RAM Allocation Tutorial</h1>
+    <p>in only 4 steps!</p>
+  </div>
+</div>
+
+
+<br><br><br>
+
+<div class="tab">
+  <button class="tablinks" 
+  onclick="openCity(event, 's1')" id="defaultOpen">Step 1 - Go to Profile Options
+  </button>
+
+  <button class="tablinks" 
+  onclick="openCity(event, 's2')">Step 2 - Uncheck The Box
+  </button>
+
+    <button class="tablinks" 
+    onclick="openCity(event, 's3')">Step 3 - Adjust Accordingly
+  </button>
+
+    <button class="tablinks" 
+    onclick="openCity(event, 's4')">Step 4 - Enjoy You Better FPS :D
+  </button>
+
+
+</div>
+      
+<div id="s1" class="tabcontent">
+  <div class="row">
+    <div class="column2">
+      <h3>Step 1 - Go to Profile Options</h3>
+      <p>
+        Go to the modpack and click on the three dots next to the play button. Then click on <strong>profile options</strong>.
+      </p>
+    </div>
+    <div class="column">
+      <img src="img/profileOptions.png" alt="">
+    </div>
+  </div>
+</div>
+        
+<div id="s2" class="tabcontent">
+  <div class="row">
+    <div class="column2">
+      <h3>Step 2 - Uncheck The Box</h3>
+      <p>
+        Uncheck the box that says <strong>Use System Memory Settings</strong>
+
+      </p>
+    </div>
+    <div class="column">
+      <img src="img/uncheckBox.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div id="s3" class="tabcontent">
+  <div class="row">
+    <div class="column2">
+      <h3>Step 3 - Adjust Accordingly</h3>
+      <p>
+        Move the slider to about the 2/3's spot. 
+        <br><br>
+        If your computer struggles with running modded minecraft, try moving the slider to around the 3/4's spot.
+      
+      </p>
+    </div>
+    <div class="column">
+      <img src="img/moveSlider.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div id="s4" class="tabcontent">
+  <div class="row">
+    <div class="column2">
+      <h3>Step 4 - Enjoy You Better FPS :D</h3>
+      <p>
+        Now enjoy your wonderful abundance of fps :DDDDDDDDDD
+      
+      </p>
+    </div>
+    <div class="column">
+      <img src="img/niceFPS.png" alt="">
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+</body>
+
+<script>
+  function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>
